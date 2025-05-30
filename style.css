@@ -151,3 +151,107 @@ body {
     background: white;
     color: #333;
 }
+
+ /* Wellness Tools Section */
+.wellness-tools {
+    padding: 6rem 2rem;
+    background: #f8fafc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c5f41;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.tool-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.tool-icon {
+    width: 60px;
+    height: 60px;
+    background: #e8f5e8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 24px;
+}
+
+.tool-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c5f41;
+}
+
+/* App Showcase */
+.app-showcase {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.showcase-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.showcase-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c5f41;
+}
+
+.showcase-images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.phone-mockup {
+    width: 200px;
+    height: 400px;
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: linear-gradient(135deg, #2c5f41, #4a7c59);
+    border-radius: 15px;
+}
